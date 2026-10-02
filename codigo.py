@@ -42,7 +42,7 @@ if botao_cadastrar:
     print(nova_venda)
     ultima_linha = len(tabela_vendas) 
     tabela_vendas.loc[ultima_linha] = nova_venda
-    tabela_vendas.to.csv("vendas.csv", index=False)
+    tabela_vendas.to_csv("vendas.csv", index=False)
     st.success("Venda cadastrada")
 
 #seção de visualizar de vendas
